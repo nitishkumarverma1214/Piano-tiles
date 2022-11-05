@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Panio Tiles</title>
+    <title>Piano-tiles</title>
+    <link rel="icon" href="tiles.png" />
     <link rel="stylesheet" href="style.css" />
   </head>
 
@@ -12,7 +13,8 @@
     <audio
       src="audio/low-soothing.mp3"
       id="loop_game_music"
-      loop="loop"></audio>
+      loop="loop"
+    ></audio>
     <main>
       <!-- rule -->
       <div class="area">
@@ -45,18 +47,18 @@
           </section>
         </section>
 
-      <!-- game borad -->
-      <section class="showScore">
-        Score:<span class="currentScore"></span>
-        <p class="level"></p>
-      </section>
-      <section class="game-board">
-        
-      </section>
-      <!-- score screen -->
-      <section class="score-screen">
-        <div class="score-card">
-          <p class="score-card-text">Piano tiles (Don't tap the white tile)</p>
+        <!-- game borad -->
+        <section class="showScore">
+          Score:<span class="currentScore"></span>
+          <p class="level"></p>
+        </section>
+        <section class="game-board"></section>
+        <!-- score screen -->
+        <section class="score-screen">
+          <div class="score-card">
+            <p class="score-card-text">
+              Piano tiles (Don't tap the white tile)
+            </p>
 
             <h2 class="score-card-game-mode">Arcade Mode</h2>
 
@@ -73,16 +75,18 @@
             </div>
           </div>
         </section>
-        
-        <footer><a href="https://github.com/Team-Atlantic/piano-tiles" target="_blank">Team Atlantic</a> </footer>
+
+        <footer>
+          <a href="https://github.com/Team-Atlantic/piano-tiles" target="_blank"
+            >Team Atlantic</a
+          >
+        </footer>
       </div>
-     
     </main>
-   
+
     <script src="audio.js" type="module"></script>
     <script src="rules.js" type="module"></script>
     <script src="score.js" type="module"></script>
     <script src="index.js" type="module"></script>
-   
   </body>
 </html>
